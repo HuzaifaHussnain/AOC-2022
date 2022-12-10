@@ -1,5 +1,5 @@
 FILENAME = 'input.txt'
-
+import os
 total_score = 0
 badge_score = 0
 elf_groups = []
@@ -13,8 +13,8 @@ def calc_priority(item):
 
     return priority
 
-
-file = open(FILENAME, 'r')
+print(os.getcwd())
+file = open('input.txt', 'r')
 i = 1
 for line in file:
     line = line.strip()
